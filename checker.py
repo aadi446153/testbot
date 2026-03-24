@@ -23,9 +23,9 @@ def check_site():
         if KEYWORD in content:
             send_telegram("🚨 SRH tickets detected!\nhttps://shop.royalchallengers.com/ticket")
             return True
-        # else :
-            # send_telegram("No Tickets Found yet")
-            #return True
+        else :
+            send_telegram("No Tickets Found yet")
+            
 
     except Exception as e:
         print("Error:", e)
